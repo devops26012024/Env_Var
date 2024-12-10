@@ -35,4 +35,4 @@ jobs:
           echo "Server URL: $SERVER_URL"
 
           #Display global variable 
-          echo "Using Global variable: ${{vars.VERSION}}"
+          echo "Using Global variable: ${{vars.VERSION}}" 
