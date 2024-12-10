@@ -6,8 +6,6 @@ on:
       - main
       - develop
 
-env:
-  VERSION: v1.2.0  # Global variable for all environments
 
 jobs:
   deploy:
@@ -35,4 +33,6 @@ jobs:
           # Display the environment-specific variables
           echo "Environment: $ENVIRONMENT"
           echo "Server URL: $SERVER_URL"
-          echo "Version: $VERSION"
+
+          #Display global variable 
+          echo "Using Global variable: ${{vars.VERSION}}"
